@@ -17,3 +17,12 @@ services:
       - "80:80"
     depends_on:
     - catalogue
+  redis:
+    image: redis
+    container_name: redis
+  user:
+    image: user:v1
+    container_name: user
+    depends_on:
+      - mongodb
+      - redis
