@@ -1,6 +1,7 @@
 networks:
   roboshop:
     driver: bridge
+    name: roboshop
 services:
   mongodb:
     image: mongodb:v1
