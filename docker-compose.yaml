@@ -2,7 +2,7 @@ version: "3"
 networks:
   roboshop:
     driver: bridge
-    name: roboshop
+    #name: roboshop
 services:
   mongodb:
     image: mongodb:v1
